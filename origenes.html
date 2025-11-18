@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Orígenes: Pueblo Muisca</title>
+  <link rel="stylesheet" href="origenes.css">
+</head>
+
+<body>
+<nav class="menu">
+    <div class="menu-header">
+      <img src="logo.jpg" alt="Logo Agro Saberes Fonquetá" class="logo">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <ul class="menu-items">
+      <li><a href="index1.html" class="active">Inicio</a></li>
+      <li class="submenu">
+       <a href="historia1.html" class="submenu-toggle active">Historia</a>
+        <ul class="submenu-list">
+          <li><a href="origenes.html">Origenes Muisca</a></li>
+          <li><a href="valvanera.html">Cerro de la Valvanera</a></li>
+          <li><a href="comunidad.html">Comunidad actual</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+       <a href="Saberes.html" class="submenu-toggle active">Saberes Agrícolas</a>
+        <ul class="submenu-list">
+          <li><a href="ancestrales.html">Prácticas Ancestrales</a></li>
+          <li><a href="contemporaneas.html">Técnicas contemporáneas</a></li>
+           <li><a href="comparativa.html">Comparaciones</a></li>
+      </ul>
+    </li>
+        <li class="submenu">
+       <a href="plantas.html" class="submenu-toggle active">Plantas Medicinales</a>
+      <ul class="submenu-list">
+            <li><a href="catalogo.html">Catálogo digital</a></li>
+           <li><a href="comparativa.html">Preparaciones tradicionales</a></li>
+      </ul>
+      </li>
+      <li class="submenu">
+       <a href="analisis.html" class="submenu-toggle active">Análisis de datos</a>
+      <ul class="submenu-list">
+            <li><a href="catalogo.html">Catálogo digital</a></li>
+           <li><a href="comparativa.html">Preparaciones tradicionales</a></li>
+      </ul>
+      </li>
+<li class="submenu">
+     <a href="juegos.html" class="submenu-toggle active">Juegos interactivos</a>
+      </li>
+      <li class="submenu">
+       <a href="Multimedia.html" class="submenu-toggle active">Multimedia</a>
+      <ul class="submenu-list">
+            <li><a href="catalogo.html">Catálogo digital</a></li>
+           <li><a href="preparaciones.html">Preparaciones tradicionales</a></li>
+      </ul>
+      </li>
+    
+    </ul>
+  </nav>
+
+<script>
+  // menú hamburguesa
+  document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".menu-items").classList.toggle("show");
+  });
+
+  // submenú para celular
+  document.querySelectorAll(".submenu-toggle").forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("active");
+    });
+  });
+</script>
+<header class="encabezado">
+  <h1>🌄 Nuestros Orígenes: El Pueblo Muisca</h1>
+  <p>Herederos de una civilización milenaria en el corazón del altiplano.</p>
+</header>
+
+<main>
+
+  <!-- SECCIÓN 1 -->
+  <section class="bloque">
+    <h2>👥 ¿Quiénes Somos?</h2>
+    <div class="contenido">
+      <div class="texto">
+        <p>
+          Somos el pueblo Muisca, también conocidos como Chibchas, descendientes de una de las civilizaciones más avanzadas de Colombia.
+          Nuestros ancestros habitaron el altiplano Cundiboyacense, desarrollando conocimientos profundos sobre la agricultura, la astronomía, el tejido y la orfebrería.
+        </p>
+
+        <h3>🌍 Nuestro Territorio Ancestral</h3>
+        <ul>
+          <li>Las planicies de Bogotá y Tunja</li>
+          <li>Valles de Fusagasugá, Pacho, Cáqueza y Tenza</li>
+          <li>Regiones de Ubaté, Chiquinquirá, Móniquirá y Leiva</li>
+          <li>Sogamoso y las montañas de la cordillera oriental</li>
+        </ul>
+
+        <blockquote>
+          📌 "En su momento de mayor extensión, el territorio Muisca abarcaba
+          aproximadamente 32 km² solo en Chía, extendiéndose de montaña a montaña."
+        </blockquote>
+      </div>
+
+      <div class="imagen espacio-imagen">
+         <img src="mapa.jpg">  <br>Mapa del territorio Muisca
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 COSMOVISIÓN -->
+  <section class="bloque color1">
+    <h2>✨ Nuestra Cosmovisión</h2>
+    <p class="intro">La vida Muisca está guiada por la armonía con los cuatro elementos sagrados:</p>
+
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>🌍 La Madre Tierra (Jicha)</h3>
+        <p>Nuestra madre que nos da vida, alimento y hogar.</p>
+        <div class="imagen espacio-imagen"><img src="tierra.jpg">  </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>💧 El Agua</h3>
+        <p>Elemento sagrado para la medicina y la purificación.</p>
+        <div class="imagen espacio-imagen"> <img src="agua.jpg">  </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>🌬️ El Aire</h3>
+        <p>Nos conecta con el espíritu y el aliento de vida.</p>
+        <div class="imagen espacio-imagen"> <img src="aire.jpg"> </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>🔥 El Fuego</h3>
+        <p>Representa la transformación y el hogar.</p>
+        <div class="imagen espacio-imagen"> <img src="fuego.jpg"> </div>
+      </div>
+    </div>
+
+    <blockquote class="frase">
+      "El Gran Espíritu nos ha dado todo para poder vivir: la madre tierra, el agua, el aire y el fuego; todos son seres vivos."
+    </blockquote>
+  </section>
+
+  <!-- DEIDADES -->
+  <section class="bloque">
+    <h2>⛰️ Nuestras Deidades Ancestrales</h2>
+
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>☀️ Chiminigagua</h3>
+        <p>La luz y el origen de la vida.</p>
+        <div class="imagen espacio-imagen"> <img src="chimi.jpg"> </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>🌊 Bachué</h3>
+        <p>Madre de la humanidad y protectora de la agricultura.</p>
+        <div class="imagen espacio-imagen"> <img src="bachue.jpg"> </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>⚡ Bochica</h3>
+        <p>El maestro que enseñó la agricultura y el tejido.</p>
+        <div class="imagen espacio-imagen"> <img src="bochica.jpg"> </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>☀️ Sué y 🌙 Chía</h3>
+        <p>El Sol y la Luna: equilibrio entre luz y noche.</p>
+        <div class="imagen espacio-imagen"> <img src="sue.jpg"> </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>🌈 Cuchavira</h3>
+        <p>Protector de embarazadas y enfermos.</p>
+        <div class="imagen espacio-imagen"> <img src="cucha.jpg"> </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LENGUA -->
+  <section class="bloque color2">
+    <h2>🗣️ El Idioma Muisca</h2>
+    <table class="tabla">
+      <tr><th>Muysccubun</th><th>Español</th></tr>
+      <tr><td>Jicha</td><td>Tierra</td></tr>
+      <tr><td>Sué</td><td>Sol</td></tr>
+      <tr><td>Chía</td><td>Luna</td></tr>
+      <tr><td>Aba</td><td>Maíz</td></tr>
+      <tr><td>Ayo</td><td>Coca</td></tr>
+    </table>
+
+    <blockquote>"Hoy, muchas familias están recuperando nuestra lengua ancestral."</blockquote>
+  </section>
+
+  <!-- TRADICIÓN ORAL -->
+  <section class="bloque">
+    <h2>🎤 Tradición Oral y Memoria</h2>
+    <ul>
+      <li>🎵 Cantos ceremoniales</li>
+      <li>📖 Relatos de los mayores</li>
+      <li>🗣️ Enseñanzas prácticas</li>
+      <li>🎭 Ceremonias comunitarias</li>
+    </ul>
+
+    <blockquote>"Nuestros abuelos son guías espirituales y guardianes del saber."</blockquote>
+
+    <div class="imagen espacio-imagen"> <img src="abuelos.jpg"> </div>
+  </section>
+
+</main>
+
+<footer>
+  🌿 Pueblo Muisca de Fonquetá | Memoria Viva ✨
+</footer>
+
+</body>
+</html>

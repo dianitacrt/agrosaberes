@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrosaberes Valvanera</title>
+  <link rel="stylesheet" href="pagina.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="menu">
+    <div class="menu-header">
+      <img src="logo.jpg" alt="Logo Agro Saberes Fonquetá" class="logo">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <ul class="menu-items">
+      <li><a href="index1.html" class="active">Inicio</a></li>
+      <li class="submenu">
+       <a href="historia1.html" class="submenu-toggle active">Historia</a>
+        <ul class="submenu-list">
+          <li><a href="origenes.html">Origenes Muisca</a></li>
+          <li><a href="valvanera.html">Cerro de la Valvanera</a></li>
+          <li><a href="comunidad.html">Comunidad actual</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+       <a href="Saberes.html" class="submenu-toggle active">Saberes Agrícolas</a>
+        <ul class="submenu-list">
+          <li><a href="ancestrales.html">Prácticas Ancestrales</a></li>
+          <li><a href="contemporaneas.html">Técnicas contemporáneas</a></li>
+           <li><a href="comparativa.html">Comparaciones</a></li>
+      </ul>
+    </li>
+        <li class="submenu">
+       <a href="plantas.html" class="submenu-toggle active">Plantas Medicinales</a>
+      <ul class="submenu-list">
+            <li><a href="catalogo.html">Catálogo digital</a></li>
+           <li><a href="preparaciones.html">Preparaciones tradicionales</a></li>
+      </ul>
+      </li>
+      <li class="submenu">
+       <a href="analisis.html" class="submenu-toggle active">Análisis de datos</a>
+      <ul class="submenu-list">
+            <li><a href="catalogo.html">Catálogo digital</a></li>
+           <li><a href="comparativa.html">Preparaciones tradicionales</a></li>
+      </ul>
+      </li>
+<li class="submenu">
+     <a href="juegos.html" class="submenu-toggle active">Juegos interactivos</a>
+      </ul>
+      </li>
+      <li class="submenu">
+       <a href="Multimedia.html" class="submenu-toggle active">Multimedia</a>
+      <ul class="submenu-list">
+            <li><a href="catalogo.html">Catálogo digital</a></li>
+           <li><a href="comparativa.html">Preparaciones tradicionales</a></li>
+      </ul>
+      </li>
+    
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-texto">
+      <h1>🌾 Agrosaberes Valvanera</h1>
+      <p>Conectando tradición y tecnología para sembrar futuro 🌱</p>
+    </div>
+    <img src="resguardo.jpg" alt="Agrosaberes Valvanera" class="hero-img">
+  </header>
+
+  <main class="contenedor">
+    <section class="descripcion">
+      <p>
+        Bienvenido/a a <strong>Agro Saberes Fonquetá</strong>. Aquí exploramos los conocimientos agrícolas y medicinales
+        de nuestra comunidad muisca, integrándolos con la ciencia y la tecnología actual.
+        ¡Aprendamos juntos a cuidar la Tierra con respeto, creatividad y curiosidad!
+      </p>
+    </section>
+
+    <section class="secciones">
+      <div class="tarjeta">
+        <img src="historia.jpg" alt="Historia">
+        <h3>Historia</h3>
+        <p>Descubre nuestras raíces y las tradiciones agrícolas muiscas.</p>
+        <a href="historia1.html" class="btn">Explorar</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="recursos.jpg" alt="Recursos Multimedia">
+        <h3>Recursos Multimedia</h3>
+        <p>Videos, sonidos y lecturas para aprender de forma divertida.</p>
+        <a href="recursos.html" class="btn">Ver más</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="jugando.jpg" alt="Aprende Jugando">
+        <h3>Aprende Jugando</h3>
+        <p>Desafíos y juegos para poner a prueba tus conocimientos.</p>
+        <a href="juegos.html" class="btn">Jugar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿 Proyecto escolar - Institución Educativa Valvanera 🌿</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const menuItems = document.querySelector('.menu-items');
+    toggleButton.addEventListener('click', () => {
+      menuItems.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
